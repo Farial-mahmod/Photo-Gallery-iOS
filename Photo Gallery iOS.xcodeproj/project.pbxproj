@@ -14,6 +14,8 @@
 		531B32772ACC678900AC94FB /* Photo_Gallery_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B32762ACC678900AC94FB /* Photo_Gallery_iOSTests.swift */; };
 		531B32812ACC678900AC94FB /* Photo_Gallery_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B32802ACC678900AC94FB /* Photo_Gallery_iOSUITests.swift */; };
 		531B32832ACC678900AC94FB /* Photo_Gallery_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B32822ACC678900AC94FB /* Photo_Gallery_iOSUITestsLaunchTests.swift */; };
+		531B32912ACC75D100AC94FB /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B32902ACC75D100AC94FB /* Photo.swift */; };
+		531B32952ACC7E0900AC94FB /* APIFormation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B32942ACC7E0900AC94FB /* APIFormation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		531B327C2ACC678900AC94FB /* Photo Gallery iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Photo Gallery iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		531B32802ACC678900AC94FB /* Photo_Gallery_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_Gallery_iOSUITests.swift; sourceTree = "<group>"; };
 		531B32822ACC678900AC94FB /* Photo_Gallery_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_Gallery_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		531B32902ACC75D100AC94FB /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		531B32942ACC7E0900AC94FB /* APIFormation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFormation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,9 @@
 		531B32632ACC678600AC94FB /* Photo Gallery iOS */ = {
 			isa = PBXGroup;
 			children = (
+				531B32932ACC763800AC94FB /* View */,
+				531B32922ACC761B00AC94FB /* ViewModel */,
+				531B328F2ACC759200AC94FB /* Model */,
 				531B32642ACC678600AC94FB /* Photo_Gallery_iOSApp.swift */,
 				531B32662ACC678600AC94FB /* ContentView.swift */,
 				531B32682ACC678800AC94FB /* Assets.xcassets */,
@@ -127,6 +134,29 @@
 				531B32822ACC678900AC94FB /* Photo_Gallery_iOSUITestsLaunchTests.swift */,
 			);
 			path = "Photo Gallery iOSUITests";
+			sourceTree = "<group>";
+		};
+		531B328F2ACC759200AC94FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				531B32902ACC75D100AC94FB /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		531B32922ACC761B00AC94FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				531B32942ACC7E0900AC94FB /* APIFormation.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		531B32932ACC763800AC94FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531B32912ACC75D100AC94FB /* Photo.swift in Sources */,
 				531B32672ACC678600AC94FB /* ContentView.swift in Sources */,
+				531B32952ACC7E0900AC94FB /* APIFormation.swift in Sources */,
 				531B32652ACC678600AC94FB /* Photo_Gallery_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
