@@ -6,18 +6,22 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct ContentView: View {
+    @ObservedObject var displayingPhotos = GalleryPhoto()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView {
+        LazyVStack(alignment: .leading){
+          
+                ForEach(displayingPhotos.photos, id: \.id) { photo in
+                    
+                    AsyncImage(url: URL(string: "\(photo.urls.regularUrl.absoluteString)"))
+                }}
+            }
         }
-        .padding()
     }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
