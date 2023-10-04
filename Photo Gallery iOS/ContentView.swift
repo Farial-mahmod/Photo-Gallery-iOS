@@ -14,28 +14,44 @@ struct ContentView: View {
     @State var lastScaleValue: CGFloat = 1.0
     
     var body: some View {
-        Text("Photo Gallery iOS")
-            .font(.headline)
-            .padding()
-        ScrollView {
-            LazyVStack(alignment: .center){
-          
-                ForEach(displayingPhotos.photos, id: \.id) { photo in
-                    
-                    AsyncImage(url: URL(string: photo.urls.regularUrl.absoluteString))                        .frame(width: 275, height: 275)
-                        .cornerRadius(35).scaledToFit().padding()
-                        .gesture(MagnificationGesture().onChanged { val in
-                                    let delta = val / self.lastScaleValue
-                                    self.lastScaleValue = val
-                                    let newScale = self.scale * delta
 
-                        //... anything else e.g. clamping the newScale
-                        }.onEnded { val in
-                          // without this the next gesture will be broken
-                          self.lastScaleValue = 1.0
-                        })
-                      }
+        NavigationView {
+
+            ScrollView {
+                
+                Text("Collection Gallery iOS")
+                    .font(.title).foregroundStyle(
+                        LinearGradient(
+                            colors: [.red, .blue, .green, .red],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                
+                LazyVStack(alignment: .center){
+                    
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum:200))]) {
+                        
+                        ForEach(displayingPhotos.photos, id: \.id) { photo in
+                            NavigationLink(destination: FullscreenView(link: photo.urls.regularUrl.absoluteString)){
+                                
+                                AsyncImage(url: URL(string: photo.urls.regularUrl.absoluteString))                        .frame(width: 275, height: 275)
+                                    .cornerRadius(35).scaledToFit().padding()
+                                    .gesture(MagnificationGesture().onChanged { val in
+                                        let delta = val / self.lastScaleValue
+                                        self.lastScaleValue = val
+                                        let newScale = self.scale * delta
+                                        
+                                        //... anything else e.g. clamping the newScale
+                                    }.onEnded { val in
+                                        // without this the next gesture will be broken
+                                        self.lastScaleValue = 1.0
+                                    })
+                            }
+                        }
+                    } 
                 }
+            }
         }
         }
         }

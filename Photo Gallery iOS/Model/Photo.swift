@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct Photo: Codable, Identifiable {
     let id: String
     let urls: Urls

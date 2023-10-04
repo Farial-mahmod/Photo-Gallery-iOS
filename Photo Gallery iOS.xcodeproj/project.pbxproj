@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53130C6F2ACDD1E5004D93E1 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53130C6E2ACDD1E5004D93E1 /* SplashScreen.swift */; };
+		53178CE62ACD6F02008FEA17 /* FullscreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53178CE52ACD6F02008FEA17 /* FullscreenView.swift */; };
 		531B32652ACC678600AC94FB /* Photo_Gallery_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B32642ACC678600AC94FB /* Photo_Gallery_iOSApp.swift */; };
 		531B32672ACC678600AC94FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B32662ACC678600AC94FB /* ContentView.swift */; };
 		531B32692ACC678800AC94FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531B32682ACC678800AC94FB /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53130C6E2ACDD1E5004D93E1 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		53178CE52ACD6F02008FEA17 /* FullscreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenView.swift; sourceTree = "<group>"; };
 		531B32612ACC678600AC94FB /* Photo Gallery iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Gallery iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		531B32642ACC678600AC94FB /* Photo_Gallery_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_Gallery_iOSApp.swift; sourceTree = "<group>"; };
 		531B32662ACC678600AC94FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 		531B32932ACC763800AC94FB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				53178CE52ACD6F02008FEA17 /* FullscreenView.swift */,
+				53130C6E2ACDD1E5004D93E1 /* SplashScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -289,10 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53130C6F2ACDD1E5004D93E1 /* SplashScreen.swift in Sources */,
 				531B32912ACC75D100AC94FB /* Photo.swift in Sources */,
 				531B32672ACC678600AC94FB /* ContentView.swift in Sources */,
 				531B32952ACC7E0900AC94FB /* APIFormation.swift in Sources */,
 				531B32652ACC678600AC94FB /* Photo_Gallery_iOSApp.swift in Sources */,
+				53178CE62ACD6F02008FEA17 /* FullscreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
