@@ -7,7 +7,16 @@
 
 import Foundation
 
-struct Photo: Identifiable, Codable {
-    var id: Int
-    var url: [String: String]
+
+struct Photo: Codable, Identifiable {
+    let id: String
+    let urls: Urls
 }
+
+struct Urls: Codable {
+    let regular: String
+    var regularUrl: URL {
+        return URL(string: regular)!
+    }
+}
+
