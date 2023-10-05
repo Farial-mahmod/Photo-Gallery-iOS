@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Each photo will have these two properties
 struct Photo: Codable, Identifiable {
     let id: String
     let urls: Urls
