@@ -18,6 +18,7 @@
 		531B32832ACC678900AC94FB /* Photo_Gallery_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B32822ACC678900AC94FB /* Photo_Gallery_iOSUITestsLaunchTests.swift */; };
 		531B32912ACC75D100AC94FB /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B32902ACC75D100AC94FB /* Photo.swift */; };
 		531B32952ACC7E0900AC94FB /* APIFormation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B32942ACC7E0900AC94FB /* APIFormation.swift */; };
+		532D49E02ACE93290094E3DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532D49DF2ACE93290094E3DE /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		531B32822ACC678900AC94FB /* Photo_Gallery_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_Gallery_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		531B32902ACC75D100AC94FB /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		531B32942ACC7E0900AC94FB /* APIFormation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFormation.swift; sourceTree = "<group>"; };
+		532D49DF2ACE93290094E3DE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		531B32632ACC678600AC94FB /* Photo Gallery iOS */ = {
 			isa = PBXGroup;
 			children = (
+				532D49DE2ACE93130094E3DE /* Constants */,
 				531B32932ACC763800AC94FB /* View */,
 				531B32922ACC761B00AC94FB /* ViewModel */,
 				531B328F2ACC759200AC94FB /* Model */,
@@ -163,6 +166,14 @@
 				53130C6E2ACDD1E5004D93E1 /* SplashScreen.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		532D49DE2ACE93130094E3DE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				532D49DF2ACE93290094E3DE /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +310,7 @@
 				531B32912ACC75D100AC94FB /* Photo.swift in Sources */,
 				531B32672ACC678600AC94FB /* ContentView.swift in Sources */,
 				531B32952ACC7E0900AC94FB /* APIFormation.swift in Sources */,
+				532D49E02ACE93290094E3DE /* Constants.swift in Sources */,
 				531B32652ACC678600AC94FB /* Photo_Gallery_iOSApp.swift in Sources */,
 				53178CE62ACD6F02008FEA17 /* FullscreenView.swift in Sources */,
 			);
