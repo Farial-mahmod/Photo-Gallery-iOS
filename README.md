@@ -20,13 +20,13 @@ Features:
 
 1. Homescreen:
 
-![https://github.com/Farial-mahmod/Photo-Gallery-iOS/blob/main/screenshots/Screenshot%202023-10-05%20at%2012.04.49%20AM.png]
+![Homescreen](https://github.com/Farial-mahmod/Photo-Gallery-iOS/blob/main/screenshots/Screenshot%202023-10-05%20at%2012.04.49%20AM.png)
 
 2. Fullscreen View:
 
-![https://github.com/Farial-mahmod/Photo-Gallery-iOS/blob/main/screenshots/Screenshot%202023-10-05%20at%2012.05.12%20AM.png]
+![Fullscreen](https://github.com/Farial-mahmod/Photo-Gallery-iOS/blob/main/screenshots/Screenshot%202023-10-05%20at%2012.05.12%20AM.png)
 
 3. Sharing Feature with custom message:
 
-![https://github.com/Farial-mahmod/Photo-Gallery-iOS/blob/main/screenshots/Screenshot%202023-10-05%20at%2012.05.26%20AM.png]
+![Sharing with message](https://github.com/Farial-mahmod/Photo-Gallery-iOS/blob/main/screenshots/Screenshot%202023-10-05%20at%2012.05.26%20AM.png)
 
