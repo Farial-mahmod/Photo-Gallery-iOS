@@ -14,7 +14,8 @@ Features:
 4. Magnification feature on the fullscreen view
 5. Readable code with comments
 6. Splash screen and appicon to make the app look professional
-7. No dependency on third-party library
+7. Few UI test cases have been added to test the app
+8. No dependency on third-party library
 
 ### Screenshots:
 
